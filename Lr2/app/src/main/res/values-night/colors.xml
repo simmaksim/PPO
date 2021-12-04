@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#788500</color>
+    <color name="Background">#0C0C00</color>
+    <color name="Surface">#3C3800</color>
+    <color name="colorPrimaryDark">#5D6700</color>
+    <color name="colorPrimaryLight">#292900</color>
+    <color name="colorSecondary">#D88216</color>
+    <color name="colorSecondaryLight">#FFA100</color>
+    <color name="textColor">#f9fbe7</color>
+    <color name="textColorLight">#E8F9FBE7</color>
+    <color name="colorHighlight">#FF0000</color>
+    <color name="hintColor">#898A6D</color>r>
+    <color name="btnPlayColor">#ECC400</color>
+    <color name="colorToolbar">#E8FBFFD4</color>
+
+    <color name="timerTimeColor">#A255B5</color>
+    <color name="timerStageColor">#932DAC</color>
+</resources>

@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Tabata timer</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="save">Save</string>
+
+    <string name="db_name" translatable="false">TabataDatabase</string>
+
+    <!-- Edit page -->
+    <string name="tabata_title_hint">TABATA TITLE</string>
+    <string name="warm_up">Warm up</string>
+    <string name="work">Work</string>
+    <string name="work_short">Work</string>
+    <string name="rest">Rest</string>
+    <string name="repeats">Repeats</string>
+    <string name="repeats_short">Reps</string>
+    <string name="cycles">Cycles</string>
+    <string name="cooldown">Cooldown</string>
+    <string name="tabata_color">Color</string>
+
+    <!-- Settings -->
+    <string name="title_activity_settings">Settings</string>
+    <!-- Preference Titles -->
+    <string name="appearance_header">Appearance</string>
+    <string name="lang_header">Language</string>
+    <string name="data_header">Data managing</string>
+
+    <!-- Appearance Preferences -->
+    <string name="theme_title">Dark theme</string>
+    <string name="text_size_title">Text size</string>
+
+    <!-- Language Preferences -->
+    <string name="lang_title">Language</string>
+    <string name="lang_action_title">Choose language</string>
+
+    <!-- Data managing Preferences -->
+    <string name="delete_all_title">Delete all stored data</string>
+
+    <!-- Text size entries -->
+    <string name="size_small">Small</string>
+    <string name="size_medium">Medium</string>
+    <string name="size_large">Large</string>
+
+    <!-- Text size values -->
+    <string name="small" translatable="false">small</string>
+    <string name="medium" translatable="false">medium</string>
+    <string name="large" translatable="false">large</string>
+
+    <!-- Language entries -->
+    <string name="russian">Russian</string>
+    <string name="english">English</string>
+
+    <!-- Language values -->
+    <string name="ru" translatable="false">ru</string>
+    <string name="eng" translatable="false">eng</string>
+
+    <!-- Alert dialog -->
+    <string name="maybe_text">Don\'t be so shy, sis!</string>
+    <string name="ok">oi, vsio!</string>
+    <string name="no">im not like this!</string>
+    <string name="dialog_message">All your store data will be deleted. Delete all??</string>
+    <string name="ok_text">Data store is clear</string>
+    <string name="no_text">Cancel</string>
+    <string name="warning">Warning</string>
+
+    <!-- Timer Activity -->
+    <string name="title_activity_timer">Timer</string>
+    <string name="timerCompleted">Click to leave the page, please</string>
+    <string name="complete">Complete</string>
+
+    <string name="delete_tabata_message">this tabata will be deleted. Continue??</string>
+    <string name="ok1">OK</string>
+    <string name="ok1_text">Tabata was deleted</string>
+    <string name="no1">NO</string>
+    <string name="no1_text">Cancel</string>
+
+</resources>

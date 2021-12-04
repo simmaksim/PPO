@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="@integer/enterAnimTime"
+    android:exitFadeDuration="@integer/exitAnimTime">
+
+    <item android:state_pressed="true" >
+        <layer-list>
+            <item android:drawable="@drawable/ic_pause_dark"
+                android:width="56dp" android:height="56dp"
+                android:gravity="center"/>
+        </layer-list>
+    </item>
+
+    <item android:state_pressed="false">
+        <layer-list>
+            <item android:drawable="@drawable/ic_pause_light"
+                android:width="60dp" android:height="60dp"
+                android:gravity="center"/>
+        </layer-list>
+    </item>
+</animated-selector>

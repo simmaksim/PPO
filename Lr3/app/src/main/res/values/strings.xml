@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lr3</string>
+    <string name="title_activity_main">Live notes</string>
+
+    <string name="note_it_all_here">Content</string>
+    <string name="empty_notes_message">Still nothing</string>
+    <string name="done">Write</string>
+    <string name="tags">TAGS</string>
+    <string name="title">Name</string>
+    <string name="search_for_tags">Search by tag</string>
+    <string name="delete">Delete</string>
+    <string name="sort_notes">Sort notes</string>
+    <string name="title_hint">Name</string>
+</resources>

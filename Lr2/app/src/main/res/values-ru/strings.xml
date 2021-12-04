@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Табата таймер</string>
+    <string name="action_settings">Настройки</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="save">Сохранить</string>
+
+    <string name="tabata_title_hint">НАЗВАНИЕ</string>
+    <string name="warm_up">Разминка</string>
+    <string name="work">Упражнения</string>
+    <string name="work_short">Упр.</string>
+    <string name="rest">Отдых</string>
+    <string name="repeats">Повторы</string>
+    <string name="repeats_short">Повт.</string>
+    <string name="cycles">Циклы</string>
+    <string name="cooldown">Заминка</string>
+    <string name="tabata_color">Цвет</string>
+
+    <!-- Settings -->
+    <string name="title_activity_settings">Настройки</string>
+    <!-- Preference Titles -->
+    <string name="appearance_header">Интерфейс</string>
+    <string name="lang_header">Язык</string>
+    <string name="data_header">Управление данными</string>
+
+    <!-- Appearance Preferences -->
+    <string name="theme_title">Тёмная тема</string>
+    <string name="text_size_title">Размер шрифта</string>
+
+    <!-- Language Preferences -->
+    <string name="lang_title">Язык</string>
+    <string name="lang_action_title">Выберите язык</string>
+
+    <!-- Data managing Preferences -->
+    <string name="delete_all_title">Удалить все сохранённые данные</string>
+
+    <!-- Text size entries -->
+    <string name="size_small">Маленький</string>
+    <string name="size_medium">Средний</string>
+    <string name="size_large">Большой</string>
+
+    <string name="russian">Русский</string>
+    <string name="english">Английский</string>
+
+    <!-- Alert dialog -->
+    <string name="maybe_text">Дерзай, подружка!</string>
+    <string name="ok">ой, всё!</string>
+    <string name="no">Я не такая!</string>
+    <string name="dialog_message">Все сохренённые данные будут удалены. Удалить всё??</string>
+    <string name="ok_text">Данные удалены</string>
+    <string name="no_text">Вечная память!</string>
+    <string name="warning">Предупреждение</string>
+
+    <!-- Timer Activity -->
+    <string name="title_activity_timer">Таймер</string>
+    <string name="timerCompleted">Нажмите, чтобы выйти</string>
+    <string name="complete">Завершено</string>
+
+    <string name="delete_tabata_message">Эта табата будет удалена. Продолжить??</string>
+    <string name="ok1">ОК</string>
+    <string name="ok1_text">Табата удалена</string>
+    <string name="no1">Нет</string>
+    <string name="no1_text">Отмена</string>
+
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".ui.activities.TimerActivity"
+    tools:deviceIds="wear">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29">
+
+        <TextView
+            android:id="@+id/curr_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/curr_stage_margin"
+            android:background="@color/red_900"
+            android:includeFontPadding="false"
+            android:text="WORK"
+            android:textColor="@color/white"
+            android:textSize="@dimen/curr_stage_text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/time"
+            app:layout_constraintLeft_toLeftOf="@id/time"
+            app:layout_constraintRight_toRightOf="@id/time"
+            tools:layout_editor_absoluteY="30dp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red_900"
+            android:includeFontPadding="false"
+            android:text="11:30"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/time_remaining_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prev_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/prev"
+            android:layout_width="@dimen/prev_next_width"
+            android:layout_height="@dimen/prev_next_height"
+            android:background="@drawable/ic_prev"
+            android:enabled="false"
+            android:shadowColor="@color/timerTimeColor" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next"
+            android:layout_width="@dimen/prev_next_width"
+            android:layout_height="@dimen/prev_next_height"
+            android:background="@drawable/ic_next"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/prev_next_text_margin_horizontal"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/prev_next"
+        app:layout_constraintRight_toRightOf="@id/prev_next"
+        app:layout_constraintTop_toBottomOf="@id/prev_next" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/run_stop_margin"
+        app:cardCornerRadius="@dimen/run_stop_card_corner_radius"
+        app:cardElevation="@dimen/run_stop_card_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/run_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red_900"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_play" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

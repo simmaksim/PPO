@@ -25,8 +25,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var input: TextView
     private lateinit var viewPager: ViewPager
+    private var count : Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        count = 0
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -78,7 +80,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val text = SpannableStringBuilder("NaN")
             text.clearSpans()
             if(expression.checkSyntax()) {
-                val check = expression.errorMessage;
                 input.text = expression.calculate().toString()
                 val text2 = input.text.toString()
                 text2.trim()
@@ -96,7 +97,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun onDelete(tmp: Int) {
+        var temp = input.text.toString()
+        var len: Int = input.text.length
         if(input.text.isNotEmpty()) {
+            if (tmp== input.text.length)
+                count=0
             input.text = input.text.dropLast(tmp)
         }
     }
@@ -104,8 +109,24 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private fun onAppend(operation: String) {
         if(functionality.contains(operation)) {
             input.append("$operation(")
+            count = 0
+
         } else {
-            input.append(operation)
+            if ((operation == "+" || operation=="-" || operation=="*" || operation=="/")&& count <= 15){
+                input.append(operation)
+                count = 0
+            }
+            else if (count < 15) {
+                input.append(operation)
+                count++
+            }
+            else{
+
+                input.append(operation)
+
+                onDelete(input.text.length)
+                count=0
+            }
         }
     }
 
