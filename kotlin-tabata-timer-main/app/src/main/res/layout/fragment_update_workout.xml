@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/appBackground"
+    tools:context=".fragments.UpdateWorkoutFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:elevation="@dimen/_8sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            android:layout_margin="@dimen/_8sdp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_8sdp">
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/colorPrimaryVariant"
+                        android:layout_margin="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit_workout_title"
+                        android:textSize="@dimen/_20sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"/>
+
+                    <EditText
+                        android:id="@+id/etTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/edit_workout_edit_text_hint"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:inputType="textMultiLine" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/colorPrimaryVariant"
+                        android:layout_margin="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit_workout_color"
+                        android:textSize="@dimen/_20sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        app:cardBackgroundColor="@color/appBackground"
+                        android:elevation="@dimen/_8sdp"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:strokeColor="@color/black"
+                        app:strokeWidth="@dimen/_1sdp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/colorPrimaryVariant"
+                        android:layout_margin="@dimen/_5sdp"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit_workout_prepare"
+                        android:textSize="@dimen/_20sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"/>
+
+                    <EditText
+                        android:id="@+id/etPrepareDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/edit_workout_edit_text_hint"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:inputType="textMultiLine" />
+
+                    <EditText
+                        android:id="@+id/etPrepareTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/edit_workout_prepare_time"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:inputType="numberPassword" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/colorPrimaryVariant"
+                        android:layout_margin="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit_workout_work"
+                        android:textSize="@dimen/_20sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"/>
+
+                    <EditText
+                        android:id="@+id/etWorkDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/edit_workout_edit_text_hint"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:inputType="textMultiLine" />
+
+                    <EditText
+                        android:id="@+id/etWorkTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/edit_workout_work_time"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:inputType="numberPassword" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/colorPrimaryVariant"
+                        android:layout_margin="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit_workout_rest"
+                        android:textSize="@dimen/_20sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"/>
+
+                    <EditText
+                        android:id="@+id/etRestDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/edit_workout_edit_text_hint"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:inputType="textMultiLine" />
+
+                    <EditText
+                        android:id="@+id/etRestTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/edit_workout_rest_time"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:inputType="numberPassword" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/colorPrimaryVariant"
+                        android:layout_margin="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit_workout_cycles"
+                        android:textSize="@dimen/_20sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"/>
+
+                    <EditText
+                        android:id="@+id/etCyclesCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/edit_workout_cycles_count"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:inputType="numberPassword" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/colorPrimaryVariant"
+                        android:layout_margin="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit_workout_sets"
+                        android:textSize="@dimen/_20sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"/>
+
+                    <EditText
+                        android:id="@+id/etSetsCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/edit_workout_sets_count"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:inputType="numberPassword" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/colorPrimaryVariant"
+                        android:layout_margin="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit_workout_rest_between_sets"
+                        android:textSize="@dimen/_20sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"/>
+
+                    <EditText
+                        android:id="@+id/etRestBetweenSetsDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/edit_workout_edit_text_hint"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:inputType="textMultiLine" />
+
+                    <EditText
+                        android:id="@+id/etRestBetweenSetsTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/edit_workout_rest_between_sets_time"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:inputType="numberPassword" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/colorPrimaryVariant"
+                        android:layout_margin="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit_workout_cooldown"
+                        android:textSize="@dimen/_20sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"/>
+
+                    <EditText
+                        android:id="@+id/etCoolDownDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/edit_workout_edit_text_hint"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:inputType="textMultiLine" />
+
+                    <EditText
+                        android:id="@+id/etCoolDownTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/edit_workout_cooldown_time"
+                        android:textAlignment="center"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="@dimen/_15ssp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:inputType="numberPassword" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/colorPrimaryVariant"
+                        android:layout_margin="@dimen/_5sdp"/>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:clickable="true"
+        android:backgroundTint="@color/colorPrimary"
+        app:borderWidth="0dp"
+        android:tintMode="@color/white"
+        android:src="@drawable/ic_done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
